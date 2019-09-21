@@ -1,0 +1,15 @@
+This is a simple toy robot implementation written for Zone.
+
+To run the application simply type:
+Prerequisites : maven, java 8
+> mvn clean install
+> cd target
+> java -jar com.zone.game-1.0-SNAPSHOT.jar
+
+-----------------------------------------------------
+Solution approarch :
+There are 3 elements in this game 1. Robot 2. Table 3. Rules of the game
+1. Main class to run and process CLI input
+2. ToyRobot only understands the moves(it doesnt know about the validity of the move)
+3. GridTable can give us information about whether a point is a valid position in the table.
+4. Game implementation(ToyRobotGame) handles the abstration of Robot, Table and applyes the rules of the game
